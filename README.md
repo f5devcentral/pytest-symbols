@@ -1,0 +1,2 @@
+# pytest-symbols
+This pytest plugin allows users to pass a "symbols" file to pytest and makes those symbols easily accessible to tests.  The symbols file is just a json document of key/value pairs that allows users to abstract away the variable properties of their test environment (eg. it allows users to avoid hard-coding things like IP addresses in their tests).  Users *could* just load the symbols file when needed, but using this plugin allows users to centralize their symbol-loading code in one location (which reduces duplication in test repositories).
